@@ -44,6 +44,61 @@ int main()
                     a[i + 1] = b;
                 }
             }
-        }}
+            cout << "По возрастанию: ";
+            for (i = 0; i < 5; i++)
+            {
+                cout << a[i] << " ";
+            }
+        }
+        break;
+    case (2): {
+        for (j = 0; j < 4; j++)
+        {
+            for (i = 0; i < 4; i++)
+            {
+                if (a[i] < a[i + 1])
+                {
+                    b = a[i];
+                    a[i] = a[i + 1];
+                    a[i + 1] = b;
+                }
+            }
+        }
+        cout << "По убыванию: ";
+        for (i = 0; i < 5; i++)
+        {
+            cout << a[i] << " ";
+        }
+    }
+            break;
+    case (3): {
+        for (int i = 0; i < 5; ++i) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+
+        cout << "Максимальный элемент: " << max << endl;
+    }
+            break;
+    case (4): {
+        for (int i = 0; i < 5; ++i) {
+            if (a[i] < min) {
+                min = a[i];
+            }
+        }
+
+        cout << "Минимальный элемент: " << min << endl;
+    }
+            break;
+    case (5): {
+        cout << "Четные элементы: ";
+        for (i = 0; i < 5; i++) {
+            if (a[i] % 2 == 0) {
+                cout << a[i] << " ";
+            }
+        }
+    }
+    }
     }
 }
